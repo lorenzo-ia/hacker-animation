@@ -26,6 +26,18 @@ hacker-animation --color green --speed slow --density low
 hacker-animation --theme cyber --color cyan --speed fast
 ```
 
+## Arquivo unico para navegador
+
+O projeto tambem inclui `hollywood-verde.html`, uma versao visual em arquivo unico para abrir direto no navegador. Ela nao precisa de Node.js, npm, PowerShell ou instalacao local: basta enviar o HTML e abrir com dois cliques.
+
+Essa versao simula o terminal Hollywood em verde com:
+
+- fundo animado estilo matriz;
+- linhas com timestamp, tags, comandos, caminhos, hashes e argumentos coloridos separadamente;
+- carregamento animado com `[LOAD]`, `[WAIT]`, `[FILE]`, `[OK]`, `[ERR]`, `[RETRY]` e `[DONE]`;
+- nomes e regioes falsas usados na CLI, incluindo `bob`, `dog`, `doghouse` e erros simulados como `unwashed dishes`;
+- interrupcao visual com `Ctrl+C` ou `Esc` quando a pagina esta em foco.
+
 ## Temas
 
 ### Hollywood
@@ -72,4 +84,4 @@ node bin/hacker-animation.js --color cyan --duration 3
 
 ## Seguranca
 
-Este projeto nao executa comandos reais. A animacao e feita com texto, temporizadores e codigos ANSI de terminal. O conteudo exibido imita comandos e logs, mas nao chama shell, processos externos ou ferramentas do sistema.
+Este projeto nao executa comandos reais. A animacao da CLI e feita com texto, temporizadores e codigos ANSI de terminal. A versao HTML roda apenas no navegador, com CSS, canvas e JavaScript local. O conteudo exibido imita comandos e logs, mas nao chama shell, processos externos ou ferramentas do sistema.
