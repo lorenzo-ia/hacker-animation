@@ -1,0 +1,29 @@
+{
+  "name": "hacker-animation",
+  "version": "0.1.0",
+  "description": "A simulated Hollywood hacker terminal animation.",
+  "type": "module",
+  "bin": {
+    "hacker-animation": "./bin/hacker-animation.js"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "README.md",
+    "PRD.md"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "cli",
+    "terminal",
+    "animation",
+    "hacker",
+    "simulation"
+  ],
+  "license": "MIT"
+}
